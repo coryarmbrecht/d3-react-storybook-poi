@@ -1,0 +1,27 @@
+{
+    "presets": [
+        ["env",
+            {
+                "targets": {
+                    "node": "current",
+                    "browsers": "last 1 major version"
+                }
+            }
+        ],
+        "react"
+    ],
+    "plugins": [
+        "syntax-dynamic-import",
+        "react-require",
+        "transform-class-properties",
+        "transform-es2015-arrow-functions",
+        "transform-react-jsx",
+        ["react-css-modules", {
+            "filetypes": {
+                ".scss": {
+                    "syntax": "postcss-scss"
+                }
+            }
+        }]
+    ]
+}
